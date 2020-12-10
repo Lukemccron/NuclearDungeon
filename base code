@@ -1,0 +1,55 @@
+namespace DungeonCrawler
+{
+    class Program
+    {
+        static void Main(string[] args) 
+           {
+            //Room Loop Stuff
+            int room1 = 0;
+            string pause = "";
+            string decision = "";
+
+            while (room1 < 1)
+            {
+                Console.Clear();
+                Console.WriteLine("''Oh God, Where Am I?''");
+                Console.WriteLine("You've woken up in a long dark, cold, hallway. The walls are covered in bible pages and ramblings about a nuclear war.");
+                Console.WriteLine("There is a single door directly in front of you with a torch on either side to illuminate the room");
+                Console.WriteLine("What would you like to do? Go through the door (A) or Read the ramblings (B):");
+                decision = Console.ReadLine();
+
+                if (decision == "A")
+                {
+                    Console.Clear();
+                    Console.WriteLine("You pass through the door into the next room, the doorway behind you is sealed off by a large stone slab that comes slamming down");
+                    Console.WriteLine("The room is nearly identical to the previous, with the exception of the ramblings, they seem to have shifted from the topic of a doomsday to speaking of some sort of war diety named 'Duke' the whole room is covered in drawings of this biblical character with a single door down the ahll and to the right");
+                    Console.WriteLine("What would you like to do? Go through the door (A) or Read the ramblings(B):");
+                    decision = Console.ReadLine();
+
+                    if (decision == "A")
+                    {
+
+                    }
+
+                    if (decision == "B")
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Whoever was coming up with this stuff must've been absolute irredeemably insane, the drawings depict a buff six foot eight man in a red tank top and black cargo pants with a large belt buckle of a nuclear hazard symbol, He appears to be holding a cigar");
+                        Console.WriteLine("Press Enter To Return:");
+                        pause = Console.ReadLine();
+                    }
+                }
+
+                if (decision == "B")
+                {
+                    Console.Clear();
+                    Console.WriteLine("The ramblings speak of some sort of nuclear world war that would begin as a misunderstanding but ultimately lead to the death of humanity and the destruction of the world as we know it");
+                    Console.WriteLine("Press Enter To Return:");
+                    pause = Console.ReadLine();
+                    
+                }
+
+            }
+        }
+    }
+}
